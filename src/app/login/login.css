@@ -1,0 +1,45 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0277bd 0%, #01579b 100%);
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}
+
+:host ::ng-deep mat-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+:host ::ng-deep mat-card-title {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+:host ::ng-deep mat-card-subtitle {
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+:host ::ng-deep .mat-mdc-form-field {
+  margin-bottom: 16px;
+}
+
+:host ::ng-deep button[type="submit"] {
+  margin-top: 8px;
+}
