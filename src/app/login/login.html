@@ -1,18 +1,18 @@
-<div class="login-container">
-  <mat-card class="login-card">
-    <mat-card-header>
-      <mat-card-title>FlashCareAI</mat-card-title>
-      <mat-card-subtitle>Hospital Administrator Login</mat-card-subtitle>
+<div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-[#0277bd] to-[#01579b] p-5">
+  <mat-card class="w-full max-w-md">
+    <mat-card-header class="flex flex-col items-center text-center mb-6">
+      <mat-card-title class="text-3xl font-semibold mb-2">FlashCareAI</mat-card-title>
+      <mat-card-subtitle class="text-sm">Hospital Administrator Login</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <form (ngSubmit)="onSubmit()">
-        <mat-form-field primary appearance="outline" class="full-width">
+      <form (ngSubmit)="onSubmit()" class="space-y-4">
+        <mat-form-field appearance="outline" class="w-full">
           <mat-label>Email</mat-label>
           <input matInput type="email" [(ngModel)]="email" name="email" required aria-label="input type for email">
           <mat-icon matPrefix>mail</mat-icon>
         </mat-form-field>
 
-        <mat-form-field appearance="outline" class="full-width">
+        <mat-form-field appearance="outline" class="w-full">
           <mat-label>Password</mat-label>
           <input matInput [type]="hidePassword ? 'password' : 'text'" [(ngModel)]="password" name="password" required aria-label="input type for password">
           <mat-icon matPrefix>lock</mat-icon>
@@ -21,7 +21,7 @@
           </button>
         </mat-form-field>
 
-        <button mat-raised-button color="primary" type="submit" class="full-width">Sign In</button>
+        <button matButton="filled" color="primary" type="submit" class="w-full mt-2">Sign In</button>
       </form>
     </mat-card-content>
   </mat-card>
