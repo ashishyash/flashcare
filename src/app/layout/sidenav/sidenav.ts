@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-sidenav',
   imports: [RouterLink, RouterLinkActive, MatListModule, MatIconModule],
   templateUrl: './sidenav.html',
-  styleUrl: './sidenav.css',
+  styleUrl: './sidenav.scss',
 })
 export class Sidenav {
   menuItems = [

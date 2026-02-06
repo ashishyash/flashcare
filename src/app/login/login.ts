@@ -11,7 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-login',
   imports: [FormsModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
   templateUrl: './login.html',
-  styleUrl: './login.css',
+  styleUrl: './login.scss',
 })
 export class Login {
   email = '';

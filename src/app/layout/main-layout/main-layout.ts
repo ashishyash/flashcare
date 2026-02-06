@@ -8,7 +8,7 @@ import { Sidenav } from '../sidenav/sidenav';
   selector: 'app-main-layout',
   imports: [RouterOutlet, MatSidenavModule, Header, Sidenav],
   templateUrl: './main-layout.html',
-  styleUrl: './main-layout.css',
+  styleUrl: './main-layout.scss',
 })
 export class MainLayout {
   sidenavOpened = true;
