@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="shadow-md bg-amber-700 border">
+<mat-toolbar color="primary" class="shadow-md">
   <button mat-icon-button (click)="onToggle()">
     <mat-icon>menu</mat-icon>
   </button>
@@ -7,7 +7,22 @@
   <button mat-icon-button>
     <mat-icon>notifications</mat-icon>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu">
     <mat-icon>account_circle</mat-icon>
   </button>
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item (click)="onLogout()">
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>

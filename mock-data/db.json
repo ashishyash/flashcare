@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@flashcare.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "administrator"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 45,
+      "condition": "ICU",
+      "status": "Critical"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 32,
+      "condition": "Emergency",
+      "status": "Stable"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": 1,
+      "date": "2024-01-15",
+      "time": "10:00 AM",
+      "doctor": "Dr. Johnson"
+    },
+    {
+      "id": 2,
+      "patientId": 2,
+      "date": "2024-01-16",
+      "time": "2:00 PM",
+      "doctor": "Dr. Williams"
+    }
+  ],
+  "dashboard": {
+    "nursesNeeded": 147,
+    "deployed": 23,
+    "inProcess": 80,
+    "available": 35
+  }
+}
