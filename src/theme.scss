@@ -7,8 +7,22 @@ $flashcare-theme: mat.define-theme((
     theme-type: light,
     primary: mat.$blue-palette,
     tertiary: mat.$azure-palette,
+    use-system-variables: true,
+  ),
+  typography: (
+    plain-family: 'Inter, sans-serif',
+    brand-family: 'Inter, sans-serif',
+  ),
+  density: (
+    scale: 0,
   ),
 ));
 
+html {
+  @include mat.all-component-themes($flashcare-theme);
+}
 
-@include mat.all-component-themes($flashcare-theme);
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}

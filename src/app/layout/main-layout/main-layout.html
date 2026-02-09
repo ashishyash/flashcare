@@ -1,12 +1,12 @@
-<div class="h-screen flex flex-col">
+<div class="main-layout">
   <app-header (toggleSidenav)="toggleSidenav()"></app-header>
   
-  <mat-sidenav-container class="flex-1">
-    <mat-sidenav mode="side" [opened]="sidenavOpened" class="w-64">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" [opened]="sidenavOpened" class="sidenav">
       <app-sidenav></app-sidenav>
     </mat-sidenav>
     
-    <mat-sidenav-content class="p-6">
+    <mat-sidenav-content class="sidenav-content">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>

@@ -1,1 +1,21 @@
 /* Main layout styles */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidenav-container {
+  flex: 1;
+  height: calc(100vh - 64px); /* Subtract header height */
+}
+
+.sidenav {
+  width: 256px;
+}
+
+.sidenav-content {
+  padding: 24px;
+  height: 100%;
+  overflow: auto;
+}

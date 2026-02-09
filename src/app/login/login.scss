@@ -1,1 +1,46 @@
-/* Using Tailwind CSS classes instead of custom styles */
+/* Login styles */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0277bd 0%, #01579b 100%);
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+:host ::ng-deep .login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+:host ::ng-deep .login-header .mat-mdc-card-header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+:host ::ng-deep .login-form mat-form-field {
+  width: 100%;
+}
+
+:host ::ng-deep .login-form button[type="submit"] {
+  width: 100%;
+  margin-top: 8px;
+}

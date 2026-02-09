@@ -1,1 +1,14 @@
 /* Header styles */
+:host ::ng-deep mat-toolbar[color="primary"] {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+:host ::ng-deep mat-toolbar[color="primary"] button {
+  color: white;
+}
+
+:host ::ng-deep mat-toolbar[color="primary"] mat-icon {
+  color: white;
+}
