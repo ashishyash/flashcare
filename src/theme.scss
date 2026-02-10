@@ -6,8 +6,6 @@ $flashcare-theme: mat.define-theme((
   color: (
     theme-type: light,
     primary: mat.$blue-palette,
-    tertiary: mat.$azure-palette,
-    use-system-variables: true,
   ),
   typography: (
     plain-family: 'Inter, sans-serif',
